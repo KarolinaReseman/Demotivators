@@ -58,7 +58,7 @@ function App() {
     const memeIndex = memes.findIndex((meme) => meme.id === memeId);
     memesCopy[memeIndex] = {
       ...memesCopy[memeIndex],
-      likes: memesCopy[memeIndex].dislikes + 1,
+      dislikes: memesCopy[memeIndex].dislikes + 1,
     };
     setMemes(memesCopy);
   };

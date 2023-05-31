@@ -13,7 +13,8 @@ const ButtonComponent = ({ upvote, downvote }) => {
   return (
     <>
       <div class="BTN">
-        <button onClick={likef}>Like</button>
+
+        <button onClick={likef}>Like </button>
         <button onClick={dislikef}>Disike</button>
       </div>
     </>

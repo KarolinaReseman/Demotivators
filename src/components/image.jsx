@@ -4,7 +4,7 @@ import ButtonComponent from "./btn-like-dislike";
 const ImageComponent = ({ memes, downvote, upvote, isHotList }) => {
   const filteredMemes = isHotList
     ? memes.filter((meme) => meme.likes - meme.dislikes >= 10)
-    : memes.filter((meme) => meme.likes - meme.dislikes < 10) ;
+    : memes.filter((meme) => meme.likes - meme.dislikes < 10) 
 
 
 
@@ -16,8 +16,8 @@ const ImageComponent = ({ memes, downvote, upvote, isHotList }) => {
           return (
             <div key={index} className="pics">
               <img src={item.imgSrc} style={{ width: "100%" }} alt="" />
-              <div style={{ background: "white" }}>
-                UP: {item.likes} <br/>
+              <div style={{ color: "white" }}>
+              UP: {item.likes} <br/>
                 DOWN: {item.dislikes}
               </div>
               <ButtonComponent
